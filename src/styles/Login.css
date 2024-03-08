@@ -1,0 +1,40 @@
+/* Using CSS Modules or Styled-Components (preferred) */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 50px auto;
+  max-width: 300px; /* Adjust as needed */
+}
+
+.login-form h2 {
+  margin-bottom: 20px;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.login-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.login-form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Alternatively, using plain CSS (less maintainable) */
+/* ... (styles similar to above) */

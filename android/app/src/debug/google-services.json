@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "993000915608",
+    "project_id": "emmareact-bef28",
+    "storage_bucket": "emmareact-bef28.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:993000915608:android:bb5fc359f2dbae9c0f46ed",
+        "android_client_info": {
+          "package_name": "com.class_06"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPxzOyi-mD2lJ9nUpecSjhZcyUkbj6lJg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
