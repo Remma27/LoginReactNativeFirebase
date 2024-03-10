@@ -2,12 +2,12 @@
 /* eslint-disable react/react-in-jsx-scope */
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import Login from './src/views/Login';
 import List from './src/views/List';
-import Details from './src/views/Details';
 import {useEffect, useState, useCallback} from 'react';
 import {User} from 'firebase/auth';
 import auth from '@react-native-firebase/auth';
+import Login from './src/views/Login';
+import SignUpComponent from './src/views/SingUpComponent';
 
 const Stack = createNativeStackNavigator();
 
@@ -16,9 +16,9 @@ const InsideStack = createNativeStackNavigator();
 function InsideLayout() {
   return (
     <InsideStack.Navigator>
-      <InsideStack.Screen name="My todos" component={List} />
-      <InsideStack.Screen name="Details" component={Details} />
+      <InsideStack.Screen name="Information" component={List} />
       <InsideStack.Screen name="Login" component={Login} />
+      <InsideStack.Screen name="SignUpComponent" component={SignUpComponent} />
     </InsideStack.Navigator>
   );
 }
@@ -56,11 +56,18 @@ export default function App() {
             options={{headerShown: false}}
           />
         ) : (
-          <Stack.Screen
-            name="Login"
-            component={Login}
-            options={{headerShown: false}}
-          />
+          <>
+            <Stack.Screen
+              name="Login"
+              component={Login}
+              options={{headerShown: false}}
+            />
+            <Stack.Screen
+              name="SignUpComponent"
+              component={SignUpComponent}
+              options={{headerShown: false}}
+            />
+          </>
         )}
       </Stack.Navigator>
     </NavigationContainer>
